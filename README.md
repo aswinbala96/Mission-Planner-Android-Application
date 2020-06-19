@@ -9,6 +9,6 @@ The flight planning application has five main pages:
   3. Camera Data 
   4. Calculators  
   5. Information and FAQ   
-<img src = "images/Screenshot.PNG" width = 100>
+<img src = "images/Screenshot.PNG" width = 500>
 
 The application is created using the Android Studio. The front end of the application is coded using XML (Extensible Markup Language). The back end of the application is coded using Java. The algorithms for the various calculators present in the application was derived as part of the research conducted for the B.Sc. and M.Sc. degrees.
