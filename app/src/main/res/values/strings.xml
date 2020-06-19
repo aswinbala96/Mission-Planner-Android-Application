@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MissionPlanner</string>
+
+    <string-array name="cameras">
+        <item>DJI Z3 [3]</item>
+        <item>DJI X5(45MM) [4]</item>
+        <item>DJI X5(15MM) [4]</item>
+        <item>DJI X5s(45MM) [5]</item>
+        <item>DJI X5s(15MM) [5]</item>
+        <item>DJI XTR [7]</item>
+        <item>DJI Z30 [6]</item>
+    </string-array>
+    <string name="title_activity_p4d_cloud_sop">p4d_cloud_sop</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidstudio.missionplanner"
+    android:configChanges="keyboardHidden|orientation">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mplogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+chro
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MissionType"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SavedMissions"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Cameras"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Calculator"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Info"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FacilitySOP"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BridgeSOP"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mpSOP"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".GSDCalculator"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".olapcalculator"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".heatmap"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".surface_plot"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".haversine"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".frame_calculator"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".infoandfaq"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SOPS"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".faq"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".construction_sop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".p4d_cloud_sop"
+            android:label="@string/title_activity_p4d_cloud_sop"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".vdatum_sop"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".About"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FAQPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Z3Camera"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".X515Camera"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".X545Camera"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".X5s15Camera"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".X5s45Camera"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".XTRCamera"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Z30Camera"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FacilityOptions"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Facility3D"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FacilityRoof"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FacilityFace"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ConstructOptions"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BridgeOptions"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".exptOptions"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BridgeDeck"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BridgeFacade"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Bridge3D"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Construct3D"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ConstructProgress"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+    <supports-screens
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:normalScreens="true"
+        android:anyDensity="true"/>
+
+</manifest>

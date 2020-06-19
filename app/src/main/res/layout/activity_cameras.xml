@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9D9D9"
+    tools:background="#D9D9D9">
+
+    <LinearLayout
+        android:id="@+id/miss_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D9D9D9"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CAMERA"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/_30sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" DATA"
+            android:textColor="#404040"
+            android:textSize="@dimen/_30sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/miss_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_below="@id/miss_txt"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_11sdp"
+        android:background="#7B7B7D"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/menu_line"
+        android:layout_below="@id/miss_line"
+        android:background="#D9D9D9">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="#D9D9D9"
+            android:orientation="vertical">
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#D9D9D9"
+                android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#D9D9D9"
+                        android:orientation="vertical"
+                        tools:context=".MainActivity">
+
+                        <ImageButton
+                            android:id="@+id/dji_z3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_70sdp"
+                            android:background="@android:color/transparent"
+                            android:onClick="Z3_Camera"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/z3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="DJI Z3"
+                                android:textColor="#404040"
+                                android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#D9D9D9"
+                        android:orientation="vertical"
+                        tools:context=".MainActivity">
+
+                        <ImageButton
+                            android:id="@+id/dji_x5_45"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_70sdp"
+                            android:background="@android:color/transparent"
+                            android:onClick="X545_Camera"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/x5" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="DJI X5 (45MM)"
+                            android:textColor="#404040"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+
+             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="#D9D9D9"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#D9D9D9"
+                    android:orientation="vertical"
+                    tools:context=".MainActivity">
+
+                    <ImageButton
+                        android:id="@+id/dji_x5_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@android:color/transparent"
+                        android:onClick="X515_Camera"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/x5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="DJI X5 (15MM)"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#D9D9D9"
+                    android:orientation="vertical"
+                    tools:context=".MainActivity">
+
+                    <ImageButton
+                        android:id="@+id/dji_x5s_45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@android:color/transparent"
+                        android:onClick="X5s45_Camera"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/x5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="DJI X5s (45MM)"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="#D9D9D9"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#D9D9D9"
+                    android:orientation="vertical"
+                    tools:context=".MainActivity">
+
+                    <ImageButton
+                        android:id="@+id/dji_x5s_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@android:color/transparent"
+                        android:onClick="X5s15_Camera"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/x5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="DJI X5s (15MM)"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#D9D9D9"
+                    android:orientation="vertical"
+                    tools:context=".MainActivity">
+
+                    <ImageButton
+                        android:id="@+id/dji_xtr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@android:color/transparent"
+                        android:onClick="XTR_Camera"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/xtr" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="DJI XTR"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="#D9D9D9"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#D9D9D9"
+                    android:orientation="vertical"
+                    tools:context=".MainActivity">
+
+                    <ImageButton
+                        android:id="@+id/dji_z30"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@android:color/transparent"
+                        android:onClick="Z30_Camera"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/z30" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="DJI Z30"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/menu_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_above="@id/menu_txt"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:background="#7B7B7D"></View>
+
+    <LinearLayout
+        android:id="@+id/menu_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:background="#D9D9D9"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/mission_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:onClick="missionType"
+                android:scaleType="centerInside"
+                android:src="@drawable/mission_type_g" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/saved_missions"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:onClick="savedMission"
+                android:scaleType="centerInside"
+                android:src="@drawable/saved_missions_g" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/cameras"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:onClick="cameras"
+                android:scaleType="centerInside"
+                android:src="@drawable/cameras_g" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="CAMERAS"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/calculators"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:onClick="calculators"
+                android:src="@drawable/calci_g" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:onClick="info"
+                android:scaleType="centerInside"
+                android:src="@drawable/info_g" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

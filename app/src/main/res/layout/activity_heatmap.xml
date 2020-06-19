@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9D9D9"
+    tools:background="#D9D9D9"
+    tools:context=".heatmap">
+
+    <LinearLayout
+        android:id="@+id/miss_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D9D9D9"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="HEATMAP "
+            android:textColor="#FF0000"
+            android:textSize="@dimen/_22sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CALCULATOR"
+            android:textColor="#404040"
+            android:textSize="@dimen/_22sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/miss_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_below="@id/miss_txt"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_11sdp"
+        android:background="#7B7B7D"></View>
+
+    <RadioGroup
+        android:id="@+id/check_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/miss_line"
+        android:layout_gravity="center"
+        android:background="#D9D9D9"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/preset_radio"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+
+            android:text="DJI Z3"
+            android:textSize="@dimen/_12sdp" />
+
+        <RadioButton
+            android:id="@+id/custom_radio"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="DJI X5 (15MM)"
+            android:textSize="@dimen/_12sdp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/check_box2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check_box"
+        android:layout_gravity="center"
+        android:background="#D9D9D9"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/preset_radio1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:checked="true"
+
+            android:text="DJI X5 (45MM)"
+            android:textSize="@dimen/_12sdp" />
+
+        <RadioButton
+            android:id="@+id/custom_radio1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="CUSTOM CAMERA"
+            android:textSize="@dimen/_12sdp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/check_box3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check_box2"
+        android:layout_gravity="center"
+        android:background="#D9D9D9"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/preset_radio2"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:checked="true"
+
+            android:text="DJI X5s (15MM)"
+            android:textSize="@dimen/_12sdp" />
+
+        <RadioButton
+            android:id="@+id/custom_radio2"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="DJI X5s (45MM)"
+            android:textSize="@dimen/_12sdp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/check_box4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check_box3"
+        android:layout_gravity="center"
+        android:background="#D9D9D9"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/preset_radio3"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:checked="true"
+
+            android:text="DJI Z30"
+            android:textSize="@dimen/_12sdp" />
+
+        <Spinner
+            android:id="@+id/zoom_list"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/_12sdp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calc_butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@id/check_box4"
+        android:text="CALCULATE"
+        android:textSize="@dimen/_10sdp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/menu_line"
+        android:layout_below="@id/calc_butt"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:background="#D9D9D9"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="#D9D9D9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/camera_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="HEAT MAP"
+                android:textColor="#404040"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_9sdp"
+                android:background="#000000"></View>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/menu_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_above="@id/menu_txt"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:background="#7B7B7D"></View>
+
+    <LinearLayout
+        android:id="@+id/menu_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:background="#D9D9D9"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/mission_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:onClick="missionType"
+                android:scaleType="centerInside"
+                android:src="@drawable/mission_type_g" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/saved_missions"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:onClick="savedMission"
+                android:scaleType="centerInside"
+                android:src="@drawable/saved_missions_g" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/cameras"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:onClick="cameras"
+                android:scaleType="centerInside"
+                android:src="@drawable/cameras_g" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/calculators"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:onClick="calculators"
+                android:src="@drawable/calci_g" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="CALCI"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:onClick="info"
+                android:scaleType="centerInside"
+                android:src="@drawable/info_g" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

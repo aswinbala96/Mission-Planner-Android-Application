@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#6DB432">
+
+    <LinearLayout
+        android:id="@+id/linear_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_line"
+        android:layout_marginBottom="-91dp"
+        android:background="#6DB432"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:gravity="center_horizontal"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/_30sdp" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/HeaderTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="MISSION"
+            android:textAllCaps="true"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/_41sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:gravity="center_horizontal"
+            android:text="PLANNER"
+            android:textAllCaps="true"
+            android:textColor="#D9D9D9"
+            android:textSize="@dimen/_41sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:gravity="center_horizontal"
+            android:text="v1.0"
+            android:textColor="#070707"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:gravity="center_horizontal"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/_30sdp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/main_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_above="@id/linear_lay3"
+        android:paddingLeft="@dimen/_7sdp"
+        android:paddingRight="@dimen/_7sdp"
+        android:layout_marginBottom="0sp"
+        android:background="#7B7B7D"></View>
+
+    <LinearLayout
+        android:id="@+id/linear_lay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/_7sdp"
+        android:paddingRight="@dimen/_7sdp"
+        android:background="#6DB432"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#6DB432"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/mission_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:onClick="missionType"
+                android:scaleType="centerInside"
+                android:src="@drawable/mission_type" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="TYPE"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_9sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#6DB432"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/saved_missions"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:src="@drawable/saved_missions"
+                android:onClick="savedMission"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="MISSIONS"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_9sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#6DB432"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/cameras"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:src="@drawable/cameras"
+                android:onClick="cameras"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="CAMERAS"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_8sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#6DB432"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/calculators"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:src="@drawable/calci"
+                android:onClick="calculators"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="CALCI"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#6DB432"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:src="@drawable/info"
+                android:onClick="info"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="INFO"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

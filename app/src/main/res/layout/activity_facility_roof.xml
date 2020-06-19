@@ -1,0 +1,1288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#D9D9D9"
+    android:background="#D9D9D9"
+    tools:context=".FacilityRoof">
+
+    <LinearLayout
+        android:id="@+id/facroof_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D9D9D9"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ROOF "
+            android:textColor="#FF0000"
+            android:textSize="@dimen/_27sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="INSPECTION"
+            android:textColor="#404040"
+            android:textSize="@dimen/_27sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/facroof_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_below="@id/facroof_txt"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_11sdp"
+        android:background="#7B7B7D"></View>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/menu_line"
+        android:layout_below="@id/facroof_line"
+        android:background="#D9D9D9"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="#D9D9D9"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:singleLine="false"
+                android:text="MISSION PLANNER INSTRUCTIONS"
+                android:textColor="#404040"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:text="1. THE MISSION PLANNER AIDS USERS TO PLAN UAV MISSIONS AS PER THEIR REQUIREMENTS. "
+                android:textColor="#404040"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:text="2. THIS APPLICATION DOES NOT INTEND TO REPLACE THE FUNCTIONALITIES OF THE DJI GS PRO APPLICATION BUT ACTS AS AN EXTENSION TO THE APPLICATION "
+                android:textColor="#404040"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:text="3. ENSURE THE DJI GS PRO APPLICATION IS AVAILABLE WITH YOU WHEN USING THIS APPLICATION TO GENERATE EFFICIENT FLIGHT PLANS "
+                android:textColor="#404040"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:text="4. THIS PAGE OF THE APPLICATION AIDS USERS TO PLAN A UAV MISSION TO MAP OUT A ROOF OF A STRUCTURE BASED ON THEIR REQUIREMENTS OF IMAGE GSD AND OVERLAP"
+                android:textColor="#404040"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:text="5. THE PLANNING PROCESS CONSISTS OF 6 STEPS. FOLLOW THE PROVIDED STEPS TO PLAN REQUIRED MISSIONS."
+                android:textColor="#404040"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:singleLine="false"
+                android:text="FLIGHT PLANNING STEPS"
+                android:textColor="#404040"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:singleLine="false"
+                android:text="STEP 0: ENTER MISSION NAME"
+                android:textColor="#404040"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/facroof_missname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:autofillHints="SAMPLE MISSION"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:singleLine="false"
+                android:text="STEP 1: IDENTIFY REGION OF INTEREST [2]"
+                android:textColor="#404040"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:text="1.ON THE DJI GS PRO APPLICATION, DRAW THE REQUIRED BOUNDARY LINES AROUND THE REGION OF INTEREST. "
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:text="2.ENSURE THE ROOF LIES AT THE CENTER OF THE BOUNDARY AND BOUNDARY ALSO COVERS REGIONS OF THE GROUND AROUND THE REGION OF INTEREST. "
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:text="3.ADJUST THE COURSE ANGLE VALUE ON THE APPLICATION SUCH THAT IT IS PARALLEL TO EITHER ONE OF THE SIDES OF THE BOUNDARY"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:singleLine="false"
+                android:text="STEP 2: SELECT CAMERA"
+                android:textColor="#404040"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/facroof_camera_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="CAMERA"
+                android:textColor="#404040"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/facroof_check_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_14sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:background="#D9D9D9"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/facroof_preset_radio"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:onClick="facroof_presetRadio"
+                    android:text="PRESET CAMERA"
+                    android:textSize="@dimen/_10sdp" />
+
+                <RadioButton
+                    android:id="@+id/facroof_custom_radio"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="facroof_customRadio"
+                    android:text="CUSTOM CAMERA"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/facroof_camera_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/facroof_camera_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:gravity="center_horizontal"
+                android:text="CAMERA PARAMETERS"
+                android:textColor="#404040"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:layout_marginRight="@dimen/_54sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="#000000"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:layout_marginRight="@dimen/_54sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="8"
+                    android:text="IMAGE WIDTH"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+                <ViewSwitcher
+                    android:id="@+id/facroof_img_width_vs"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:id="@+id/facroof_img_width"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:text="0000"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <EditText
+                        android:id="@+id/facroof_img_width_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autofillHints="0000"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_9sdp" />
+
+                </ViewSwitcher>
+
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:text="px"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:layout_marginRight="@dimen/_54sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="#7B7B7D"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:layout_marginRight="@dimen/_54sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="8"
+                    android:text="IMAGE HEIGHT"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+                <ViewSwitcher
+                    android:id="@+id/facroof_img_height_vs"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:id="@+id/facroof_img_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:text="0000"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <EditText
+                        android:id="@+id/facroof_img_height_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autofillHints="0000"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_9sdp" />
+
+                </ViewSwitcher>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:text="px"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:layout_marginRight="@dimen/_54sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="#7B7B7D"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:layout_marginRight="@dimen/_54sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="8"
+                    android:text="SENSOR WIDTH"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+                <ViewSwitcher
+                    android:id="@+id/facroof_sensor_width_vs"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:id="@+id/facroof_sensor_width"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:text="0000"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <EditText
+                        android:id="@+id/facroof_sensor_width_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autofillHints="0000"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_9sdp" />
+
+                </ViewSwitcher>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="1.4"
+                    android:text="mm"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:layout_marginRight="@dimen/_54sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="#7B7B7D"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:layout_marginRight="@dimen/_54sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="8"
+                    android:text="SENSOR HEIGHT"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+                <ViewSwitcher
+                    android:id="@+id/facroof_sensor_height_vs"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:id="@+id/facroof_sensor_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:text="0000"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <EditText
+                        android:id="@+id/facroof_sensor_height_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autofillHints="0000"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_9sdp" />
+
+                </ViewSwitcher>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="1.4"
+                    android:text="mm"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:layout_marginRight="@dimen/_54sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="#7B7B7D"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:layout_marginRight="@dimen/_54sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="8"
+                    android:text="REAL FOCAL LENGTH"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+                <ViewSwitcher
+                    android:id="@+id/facroof_real_focal_vs"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:id="@+id/facroof_real_focal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:text="0000"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <EditText
+                        android:id="@+id/facroof_real_focal_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autofillHints="0000"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_9sdp" />
+
+                </ViewSwitcher>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="1.4"
+                    android:text="mm"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:layout_marginRight="@dimen/_54sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="#7B7B7D"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:layout_marginRight="@dimen/_54sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="8"
+                    android:text="35MM FOCAL LENGTH"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+                <ViewSwitcher
+                    android:id="@+id/facroof_equi_focal_vs"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:id="@+id/facroof_equi_focal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:text="0000"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <EditText
+                        android:id="@+id/facroof_equi_focal_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autofillHints="0000"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        android:textColor="#404040"
+                        android:textSize="@dimen/_9sdp" />
+
+                </ViewSwitcher>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="1.4"
+                    android:text="mm"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:layout_marginRight="@dimen/_54sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="#7B7B7D"></View>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:singleLine="false"
+                android:text="STEP 3: SELECT CAPTURE MODE [2]"
+                android:textColor="#404040"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_11sdp"
+            android:layout_marginRight="@dimen/_11sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:text="TO CAPTURE IMAGES IN A RELATIVELY SHORTER PERIOD OF TIME (IRRESPECTIVE OF THE SIZE OF THE REGION OF INTEREST), SELECT THE FOLLOWING:"
+            android:textColor="#404040"
+            android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="CAPTURE AT EQUAL TIME INTERVAL"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="ENSURE THE TRIGGERING INTERVAL IS SET AT A MINIMUM OF 2 SECONDS"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:singleLine="false"
+                android:text="STEP 4: SELECT SHOOTING ANGLE [2]"
+                android:textColor="#404040"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="TO CAPTURE IMAGES FOR ROOF INSPECTION SET SHOOTING ANGLE TO THE FOLLOWING:"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="PARALLEL TO MAIN PATH"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:singleLine="false"
+                android:text="STEP 5: GSD AND IMAGE OVERLAP"
+                android:textColor="#404040"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="ENTER REQUIRED GSD, REQUIRED OVERLAP AND STRUCTURE HEIGHT BELOW."
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_3sdp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="8"
+                    android:text="REQUIRED GSD OF ROOF IMAGES"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/facroof_reqgsd"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="00.00"
+                    android:gravity="right"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="3"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="2"
+                    android:text="cm/px"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_3sdp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="8"
+                    android:text="REQUIRED OVERLAP BW IMAGES"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle ="bold"/>
+
+                <EditText
+                    android:id="@+id/facroof_reqol"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="00.00"
+                    android:gravity="right"
+                    android:layout_weight="3"
+                    android:textColor="#404040"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:textSize="@dimen/_9sdp" />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="2"
+                    android:text="%"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_3sdp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="8"
+                    android:text="STRUCTURE HEIGHT"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/facroof_strh"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="00.00"
+
+                    android:gravity="right"
+                    android:layout_weight="3"
+                    android:textColor="#404040"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:textSize="@dimen/_9sdp" />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="2"
+                    android:text="m"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="#7B7B7D"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="8"
+                    android:text="DJI GS PRO GSD INPUT"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+                <TextView
+                    android:id="@+id/facroof_calgsd"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="00.00"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="2"
+                    android:text="cm/px"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_2sdp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="8"
+                    android:text="DJI GS PRO HEIGHT INPUT"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+                <TextView
+                    android:id="@+id/facroof_calh"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="00.00"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="2"
+                    android:text="m"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_2sdp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="8"
+                    android:text="DJI GS PRO OVERLAP INPUT"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+                <TextView
+                    android:id="@+id/facroof_calol"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="00.00"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="2"
+                    android:text="%"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:onClick="facroof_calculategsd"
+                android:text="CALCULATE"
+                android:textSize="@dimen/_8sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:text="Note: Calculations using revised formulas from Pix4D Manual [1]"
+                android:textColor="#404040"
+                android:textSize="@dimen/_8sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="THE CALCULATED VALUE OF GSD (OR ALTITUDE) AND OVERLAP IS ENTERED INTO THE APPLICATION IN THEIR RESPECTIVE FIELDS"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:singleLine="false"
+                android:text="STEP 6: MISSION CHECK"
+                android:textColor="#404040"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:text="1.ENTER ALL THE INPUTS, CALCULATED AND MENTIONED IN THE PREVIOUS STEPS, INTO DJI GS PRO APPLICATION"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:text="2.IF THE APPLICATION SWITCHES THE MODE OF CAPTURE TO HOVER AND CAPTURE VISIT THE CAMERA PAGE AND SEARCH FOR ACCEPTABLE COMBINATIONS OF GSD. OVERLAP AND TRIGGERING INTERVAL USING THE SURFACE PLOT AND, REPLAN THE MISSIONS."
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:text="3. IF THE CALCULATED VALUE OF FLIGHT TIME IS UNACCEPTABLE CHANGE THE REQUIRED OVERLAP OR GSD VALUES IN THE STEPS ABOVE AND REPLAN THE MISSION AGAIN"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:text="4. IF THE ALL THE PARAMETERS AND CALCULATED FLIGHT PLANS MEET THE REQUIREMENTS, CLICK THE SAVE BUTTON TO GENERATE THE FLIGHT PLAN REPORT."
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:singleLine="false"
+                android:text="CLICK SAVE AND ACCESS PDF FILE UNDER MISSIONS TAB"
+                android:textColor="#404040"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/facroof_pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="5sp"
+                android:text="SAVE"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/menu_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_above="@id/menu_txt"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:background="#7B7B7D"></View>
+
+    <LinearLayout
+        android:id="@+id/menu_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:background="#D9D9D9"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/mission_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:onClick="missionType"
+                android:scaleType="centerInside"
+                android:src="@drawable/mission_type_g" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="TYPE"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/saved_missions"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:onClick="savedMission"
+                android:scaleType="centerInside"
+                android:src="@drawable/saved_missions_g" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="MISSIONS"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/cameras"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:onClick="cameras"
+                android:scaleType="centerInside"
+                android:src="@drawable/cameras_g" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="CAMERAS"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/calculators"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:onClick="calculators"
+                android:src="@drawable/calci_g" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="CALCS"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageButton
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54sdp"
+                android:background="@android:color/transparent"
+                android:onClick="info"
+                android:scaleType="centerInside"
+                android:src="@drawable/info_g" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="INFO"
+                android:textColor="#404040"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
